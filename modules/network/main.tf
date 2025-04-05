@@ -119,7 +119,7 @@ resource "aws_route_table_association" "public_route_association" {
 }
 
 resource "aws_eip" "nat_gateway_eip" {
-  domain = "vpc"  
+  domain = "vpc"
   tags = {
     Name = "nat_gateway_eip"
   }
